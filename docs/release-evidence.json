@@ -1,76 +1,60 @@
 {
   "product": "streaming-asset-dependency-graph",
+  "repository": "Sunmax0731/streaming-asset-dependency-graph",
+  "githubUrl": "https://github.com/Sunmax0731/streaming-asset-dependency-graph",
+  "releaseUrl": "https://github.com/Sunmax0731/streaming-asset-dependency-graph/releases/tag/v0.1.0-alpha.1",
   "tag": "v0.1.0-alpha.1",
-  "status": "released",
-  "updatedAt": "2026-05-07T23:25:02.443Z",
-  "manualTestStatus": "手動テスト未実施",
-  "automatedVerification": {
-    "npmTest": "passed",
-    "npmRunValidate": "passed",
-    "npmRunBuild": "passed",
-    "firstPassOutput": {
-      "npmTest": "> streaming-asset-dependency-graph@0.1.0-alpha.1 test\n> node tests/product.test.mjs\n\n{\n  \"product\": \"streaming-asset-dependency-graph\",\n  \"scenarios\": 4,\n  \"summary\": {\n    \"pass\": 2,\n    \"warn\": 2,\n    \"fail\": 2\n  }\n}",
-      "npmRunValidate": "> streaming-asset-dependency-graph@0.1.0-alpha.1 validate\n> node src/cli/index.js --input samples/representative-suite.json --output dist/streaming-asset-dependency-graph-representative-report.json\n\n{\n  \"outputPath\": \"dist/streaming-asset-dependency-graph-representative-report.json\",\n  \"summary\": {\n    \"pass\": 2,\n    \"warn\": 2,\n    \"fail\": 2\n  },\n  \"scenarios\": 4\n}",
-      "npmRunBuild": "> streaming-asset-dependency-graph@0.1.0-alpha.1 build\n> node scripts/build-docs-zip.mjs\n\n{\n  \"zipPath\": \"D:\\\\AI\\\\AssetPipeline\\\\streaming-asset-dependency-graph\\\\dist\\\\streaming-asset-dependency-graph-docs.zip\"\n}"
-    }
+  "prerelease": true,
+  "latest": false,
+  "latestCheck": {
+    "endpoint": "not-found-or-no-stable-release",
+    "latestTag": null,
+    "latestIsThisPrerelease": false
   },
-  "github": {
-    "repo": "Sunmax0731/streaming-asset-dependency-graph",
-    "releaseUrl": "https://github.com/Sunmax0731/streaming-asset-dependency-graph/releases/tag/v0.1.0-alpha.1",
-    "tagName": "v0.1.0-alpha.1",
-    "prerelease": true,
-    "latest": false,
-    "latestEndpoint": {
-      "latestEndpointStatus": "not-found-or-not-latest",
-      "latestTag": null,
-      "stderr": "gh: Not Found (HTTP 404)\n"
-    },
-    "assetCount": 3,
-    "assets": [
+  "assetCount": 3,
+  "assets": {
+    "required": [
+      "dist/streaming-asset-dependency-graph-docs.zip",
+      "docs/manual-test.md",
+      "docs/strict-manual-test-addendum.md"
+    ],
+    "actualNames": [
       "manual-test.md",
       "streaming-asset-dependency-graph-docs.zip",
       "strict-manual-test-addendum.md"
     ],
-    "url": "https://github.com/Sunmax0731/streaming-asset-dependency-graph"
+    "actualCount": 3,
+    "allRequiredPresent": true
   },
-  "git": {
-    "mainOriginCleanBeforeEvidenceCommit": {
-      "mainOriginClean": true,
-      "aheadBehind": {
-        "ahead": 0,
-        "behind": 0
-      },
-      "status": "",
-      "codexBranchesRemaining": [
-        "codex/closed-alpha-release"
-      ]
-    }
-  },
-  "assets": [
-    "dist/streaming-asset-dependency-graph-docs.zip",
-    "docs/manual-test.md",
-    "docs/strict-manual-test-addendum.md"
-  ],
-  "qcds": {
+  "qcdsEvaluation": {
     "Quality": "S-",
     "Cost": "S-",
     "Delivery": "S-",
     "Satisfaction": "S-"
   },
-  "repository": "Sunmax0731/streaming-asset-dependency-graph",
-  "githubUrl": "https://github.com/Sunmax0731/streaming-asset-dependency-graph",
-  "releaseUrl": "https://github.com/Sunmax0731/streaming-asset-dependency-graph/releases/tag/v0.1.0-alpha.1",
-  "prerelease": true,
-  "latest": false,
-  "assetCount": 3,
-  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
-  "platformType": "cli-release-tool",
+  "platformRuntimeGate": {
+    "product": "streaming-asset-dependency-graph",
+    "platformType": "cli-release-tool",
+    "pass": true,
+    "method": "runtime-gate",
+    "manualTest": "not-run-by-codex",
+    "packageTest": true
+  },
+  "automatedTests": [
+    {
+      "command": "npm test",
+      "result": "passed"
+    }
+  ],
   "manualTest": "not-run-by-codex",
-  "qcdsEvaluation": {
-    "Quality": "S-",
-    "Cost": "S-",
-    "Delivery": "S-",
-    "Satisfaction": "S-",
-    "capReason": "manual-test-not-run-by-codex"
+  "git": {
+    "ahead": 0,
+    "behind": 0,
+    "status": "",
+    "localCodex": [
+      "codex/closed-alpha-release"
+    ],
+    "remoteCodex": [],
+    "clean": false
   }
 }
