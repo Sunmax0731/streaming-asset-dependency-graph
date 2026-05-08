@@ -1,0 +1,11 @@
+{
+  "product": "streaming-asset-dependency-graph",
+  "title": "配信アセット依存グラフ",
+  "domain": "AssetPipeline",
+  "ideaNo": 7,
+  "platformType": "cli-release-tool",
+  "expectedPublicTarget": "GitHub Release / BOOTH",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
